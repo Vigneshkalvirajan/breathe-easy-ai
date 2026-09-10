@@ -341,7 +341,7 @@ function Console() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-mute">Confidence</span>
-                    <span className="font-mono">{analysis.predictions[0].confidence}%</span>
+                    <span className="font-mono">{analysis.predictions[0]?.confidence ?? 0}%</span>
                   </div>
                   <p className="text-pretty pt-1 text-mute">{analysis.recommendation}</p>
                 </div>
