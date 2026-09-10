@@ -167,3 +167,33 @@
     color: var(--color-foreground);
   }
 }
+
+@keyframes breathe {
+  0%, 100% { transform: scaleY(0.9); opacity: 0.85; }
+  50% { transform: scaleY(1.06); opacity: 1; }
+}
+@keyframes grow-x {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes spec {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.95; }
+}
+
+@utility wave-bar {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: breathe 3.8s ease-in-out infinite;
+}
+@utility conf-bar {
+  transform-origin: left center;
+  animation: grow-x 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@utility spec-anim {
+  animation: spec 4.2s ease-in-out infinite;
+}
+
+@media print {
+  .no-print { display: none !important; }
+}
