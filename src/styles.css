@@ -76,6 +76,18 @@
 
 :root {
   --radius: 0.625rem;
+
+  /* Auscio clinical console palette */
+  --ink: oklch(0.243 0.012 165);
+  --mute: oklch(0.49 0.017 162);
+  --paper: oklch(0.955 0.005 100);
+  --surface: oklch(0.979 0.004 100);
+  --line: oklch(0.912 0.011 95);
+  --brand: oklch(0.383 0.058 173);
+  --brand-soft: oklch(0.928 0.014 172);
+  --sev-low: oklch(0.512 0.09 158);
+  --sev-mid: oklch(0.681 0.13 75);
+  --sev-high: oklch(0.552 0.155 35);
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
   --card: oklch(1 0 0);
